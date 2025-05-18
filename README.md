@@ -6,7 +6,7 @@ An ERC-721 token that represents unique KayKay NFTs, built with OpenZeppelin and
 
 * **Name**: KayKayNFT
 * **Symbol**: `KK`
-* **Author**: [Kelechi Kizito Ugwu](https://github.com/your-github-handle)
+* **Author**: [Kelechi Kizito Ugwu](https://github.com/kelechikizito)
 * **Standard**: ERC-721
 * **Network**: Ethereum Sepolia
 * **Contract Address**: [`0x3208722B0b29469f31fA8Cca5810aB08d117388b`](https://sepolia.etherscan.io/address/0x3208722B0b29469f31fA8Cca5810aB08d117388b)
