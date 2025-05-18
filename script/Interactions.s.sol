@@ -7,7 +7,7 @@ import {DevOpsTools} from "lib/foundry-devops/src/DevOpsTools.sol";
 
 contract MintKayKayNFT is Script {
     string public constant KAYKAY_URI =
-        "ipfs://QmUJ2qNuXbsVoVmi9jEiMv4sQR4jkMEU3QdtFxnncP7aWC";
+        "https://ipfs.io/ipfs/QmUJ2qNuXbsVoVmi9jEiMv4sQR4jkMEU3QdtFxnncP7aWC/";
 
     function run() external {
         address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment(

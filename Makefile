@@ -39,11 +39,15 @@ endif
 deploy:
 	@forge script script/DeployKayKayNFT.s.sol:DeployKayKayNFT $(NETWORK_ARGS)
 
-mint:
-	@forge script script/Interactions.s.sol:MintBasicNft $(NETWORK_ARGS) --sender $(SENDER)
+deploy-sepolia:
+	@forge script script/DeployKayKayNFT.s.sol:DeployKayKayNFT --rpc-url $(SEPOLIA_RPC_URL) --account sepolia-acc --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
 
-deployMood:
-	@forge script script/DeployMoodNft.s.sol:DeployMoodNft $(NETWORK_ARGS)
+mint:
+	@forge script script/Interactions.s.sol:MintKayKayNFT $(NETWORK_ARGS) --sender $(SENDER)
+
+mint-sepolia:
+	@forge script script/Interactions.s.sol:MintKayKayNFT --rpc-url $(SEPOLIA_RPC_URL) --account sepolia-acc --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv --sender $(SENDER) --ffi
+
 
 # script for minting the moodNft
 # script for flipping the moodNft
