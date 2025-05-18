@@ -1,66 +1,42 @@
-## Foundry
+# 🖼️ KayKayNFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+An ERC-721 token that represents unique KayKay NFTs, built with OpenZeppelin and deployed on Ethereum Sepolia testnet.
 
-Foundry consists of:
+## 📜 Contract Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* **Name**: KayKayNFT
+* **Symbol**: `KK`
+* **Author**: [Kelechi Kizito Ugwu](https://github.com/your-github-handle)
+* **Standard**: ERC-721
+* **Network**: Ethereum Sepolia
+* **Contract Address**: [`0x3208722B0b29469f31fA8Cca5810aB08d117388b`](https://sepolia.etherscan.io/address/0x3208722B0b29469f31fA8Cca5810aB08d117388b)
 
-## Documentation
+## 🚀 Features
 
-https://book.getfoundry.sh/
+* ✅ Built on OpenZeppelin's battle-tested ERC-721 implementation
+* 🔒 Secure token minting via `_safeMint`
+* 🧠 Custom metadata via `tokenURI` mapping
+* 🛠️ Powered by Foundry (for fast, modular development)
 
-## Usage
+## ⚙️ Tech Stack
 
-### Build
+* **Solidity** `^0.8.19`
+* **OpenZeppelin Contracts**
+* **Foundry** (build/test framework)
+* **Ethereum Sepolia** testnet
 
-```shell
-$ forge build
-```
+## 🧪 Local Development
 
-### Test
+### Prerequisites
 
-```shell
-$ forge test
-```
+* [Foundry](https://book.getfoundry.sh/getting-started/installation) installed
 
-### Format
 
-```shell
-$ forge fmt
-```
+## 🔍 View on Etherscan
 
-### Gas Snapshots
+[Sepolia Contract on Etherscan](https://sepolia.etherscan.io/address/0x3208722B0b29469f31fA8Cca5810aB08d117388b)
 
-```shell
-$ forge snapshot
-```
+## 📝 License
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+MIT License
+© 2025 [Kelechi Kizito Ugwu](https://github.com/kelechikizito)
